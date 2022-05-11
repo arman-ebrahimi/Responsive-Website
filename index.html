@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>website-responsive</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+			text-transform: capitalize;
+		}
+		.header{
+			background-color: #333;
+			color:white;
+			text-align: center;
+			padding: 100px 0 140px;
+			font-size: 1.3em;
+		}
+		.a-header{
+			text-decoration: none;
+			color: white;
+			border:1px solid #aaa;
+			padding: 18px 25px;
+			border-radius: 2px;
+			transition: 0.2s;
+		}
+		.a-header:hover{
+			background-color: white;
+			color: #000;
+		}
+		.container{
+			background-color: #ddd;
+			padding: 20px 10px; 30px;
+			text-align: center;
+		}
+		.tow-column{
+			display: flex;
+			justify-content: space-around;
+			line-height: 1.8em;
+		}
+		.tow-column div{
+			flex-basis: 40%;
+			font-size: 1.2em;
+			padding:10px 0;
+		}
+		.flexbox1{
+			display: flex;
+			justify-content: center;
+			background-color: #333;
+			padding: 30px 0;
+		}
+		.f-item{
+			text-align: center;
+			background-color: white;
+			flex-basis: 330px;
+			margin: 10px;
+			padding: 40px 50px;
+			line-height: 1.6em;
+		}
+		.text{
+			text-align: center;
+			background-color: #ddd;
+			padding: 40px 0;
+		}
+		.flexbox2{
+			display: flex;
+		}
+		.box{
+			flex: 50%;
+			text-align: center;
+			color: white;
+			font-size: 1.2em;
+			line-height: 1.8em;
+		}
+		.box1{
+			background-color: #0088ff;
+			padding: 30px;
+		}
+		.box2{
+			background-color: #333;
+			padding: 80px 30px;
+		}
+		.footer{
+			display: flex;
+			justify-content: space-around;
+			background-color: #000;
+			padding: 30px 0;
+			font-size: 1.3em;
+			color: white;
+		}
+		.footer a{
+			text-decoration: none;
+			color: teal;
+		}
+		.footer a:hover{
+			color: seagreen;
+		}
+		@media screen and (max-width: 700px){
+			.tow-column,.flexbox1,.flexbox2,.footer{
+				flex-wrap: wrap;
+			}
+			.tow-column div,.f-item,.box,.footer div{
+				flex: 100%;
+			}
+			.footer div{
+				text-align: center;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="header">
+	<h2>welcome to the web programming training site.</h2>
+	<p><i>at this site we turn you into a web developer.wait until you succeed.</i></p><br><br>
+	<a class="a-header" href="#link">read more</a>
+</div>
+<div class="container">
+   <h2>web development</h2>
+   <div class="tow-column">
+	   <div>to learn web programming, you need to learn the following well.
+		to learn web programming, you need to learn the following well.
+	   </div>
+	   <div>to learn web programming, you need to learn the following well.
+	   to learn web programming, you need to learn the following well.
+       </div>
+   </div>
+</div>
+<div class="flexbox1" id="link">
+	<div class="f-item">
+		<h3>HTML TOTURIAL</h3>
+		<P>This language is made up of a set of tags.This language is made up of a set of tags.
+		This language is made up of a set of tags.</P>
+	</div>
+	<div class="f-item">
+		<h3>CSS TOTURIAL</h3>
+		<p>This language beautifies the appearance of the page.This language beautifies the appearance of the page.
+		</p>
+	</div>
+	<div class="f-item">
+		<h3>JAVASCRIPT TOTURIAL</h3>
+	    <p>JavaScript is the programming language of HTML and the Web.JavaScript is the programming language of HTML and the Web.
+	    </p>
+	</div>
+</div>
+<div class="text">
+	<h2>do you have a problem ?</h2>
+	<p>Our operators respond to your problems 24 hours a day.</p>
+</div>
+<div class="flexbox2">
+	<div class="box box1">
+		<h2>contact us</h2>
+		<p>To contact us, call the number below or send a message to this email.</p>
+		<p>0938....768</p>
+		<p>htmlcss@gmail.com</p>
+	</div>
+	<div class="box box2">
+		<h2>about our company</h2>
+		<p>The most experienced programmers are at your service to succeed.</p>
+	</div>
+</div>
+<div class="footer">
+	<div>Acme Web Solutions</div>
+	<div>project by <a href="https://traversymedia.com/" target="_blank">traversy media</a></div>
+</div>
+</body>
+</html>
